@@ -6,50 +6,47 @@
     <title>Gospodăria Mea</title>
     
     <style>
-        /* Stilul general al paginii */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f8f3; /* Un fundal ușor verzui, plăcut */
-            color: #2c3e50; /* Culoarea textului (gri închis/bleumarin) */
-            padding: 20px;
+            background-color: #f4f8f3;
+            color: #2c3e50;
+            padding: 15px;
             max-width: 600px;
-            margin: 0 auto; /* Centrează conținutul pe ecranul telefonului */
+            margin: 0 auto;
         }
 
-        /* Stil pentru titlul principal */
         h1 {
-            color: #2e7d32; /* Verde închis */
+            color: #2e7d32;
             text-align: center;
+            font-size: 24px;
         }
 
-        /* Stil pentru subtitluri */
         h2 {
             color: #388e3c;
-            border-bottom: 2px solid #a5d6a7; /* O linie verde sub titluri */
+            border-bottom: 2px solid #a5d6a7;
             padding-bottom: 5px;
+            font-size: 18px;
+            margin-top: 25px;
         }
 
-        /* Stil pentru listă */
         ul {
             background-color: #ffffff;
-            padding: 20px 35px;
-            border-radius: 8px; /* Colțuri rotunjite */
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* O umbră ușoară */
+            padding: 15px 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
         li {
-            margin-bottom: 8px;
+            margin-bottom: 6px;
         }
 
-        /* Stil pentru imagine */
         img {
-            max-width: 100%; /* Face imaginea să se adapteze la ecranul mobil */
+            max-width: 100%;
             height: auto;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.15);
         }
 
-        /* Stil pentru link-uri */
         a {
             color: #1b5e20;
             font-weight: bold;
@@ -58,6 +55,37 @@
 
         a:hover {
             text-decoration: underline;
+        }
+
+        /* Stiluri noi pentru tabel */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            border-radius: 8px;
+            overflow: hidden; /* Ascunde colțurile care ies în afară */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-top: 10px;
+        }
+
+        th, td {
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        th {
+            background-color: #388e3c;
+            color: white;
+            font-size: 14px;
+        }
+
+        td {
+            font-size: 14px;
+        }
+
+        tr:last-child td {
+            border-bottom: none; /* Scoate linia de la ultimul rând */
         }
     </style>
 </head>
@@ -76,6 +104,31 @@
       <li>Măgari (ajutoare de nădejde)</li>
       <li>Câini de pază</li>
     </ul>
+
+    <!-- Noua secțiune: Tabelul de activități -->
+    <h2>Program orientativ:</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Activitate</th>
+          <th>Perioadă</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Hrană și apă păsări</td>
+          <td>Dimineața / Seara</td>
+        </tr>
+        <tr>
+          <td>Curățenie adăposturi</td>
+          <td>O dată pe săptămână</td>
+        </tr>
+        <tr>
+          <td>Verificare stocuri și acte</td>
+          <td>Luni</td>
+        </tr>
+      </tbody>
+    </table>
 
     <h2>Resurse utile:</h2>
     <p>Pentru a gestiona actele și facturile, folosesc aplicația dedicată de pe <a href="https://www.google.com" target="_blank">Google</a>.</p>
